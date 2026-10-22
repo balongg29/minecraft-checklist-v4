@@ -195,6 +195,6 @@ final class ChatShare {
 
     private static void say(Component c) {
         Minecraft mc = Minecraft.getInstance();
-        if (mc.player != null) mc.player.displayClientMessage(c, false);
+        if (mc.player != null) mc.player.sendSystemMessage(c);
     }
 }
